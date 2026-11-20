@@ -55,9 +55,7 @@ class _HalamanUtamaState extends State<HalamanUtama> {
       padding: const EdgeInsets.only(top: 24, bottom: 8),
       child: Text(
         teks,
-        style: Theme.of(
-          context,
-        ).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold),
+        style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
       ),
     );
   }

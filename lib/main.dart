@@ -1,4 +1,4 @@
-import 'package:belajar_flutter/meet_tiga.dart';
+import 'package:belajar_flutter/meet_empat.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: MeetTiga(),
+      home: HalamanUtama(),
     );
   }
 }

@@ -6,9 +6,7 @@ class MeetTiga extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Beranda'),
-      ),
+      appBar: AppBar(title: const Text('Beranda')),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16),
         child: Column(
@@ -67,27 +65,34 @@ class MeetTiga extends StatelessWidget {
 
             // Column judul & isi
             const Column(
-              children: [
-                Text('Judul'),
-                SizedBox(height: 16),
-                Text('Isi'),
-              ],
+              children: [Text('Judul'), SizedBox(height: 16), Text('Isi')],
             ),
             const SizedBox(height: 16),
+
+            // Expanded
+            Row(
+              children: [
+                Expanded(
+                  child: ElevatedButton(onPressed: () {}, child: Text('Batal')),
+                ),
+                SizedBox(width: 12),
+                Expanded(
+                  child: ElevatedButton(
+                    onPressed: () {},
+                    child: Text('Simpan'),
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(height: 24),
 
             // Row dengan Expanded
             const SizedBox(
               height: 100,
               child: Row(
                 children: [
-                  Expanded(
-                    flex: 2,
-                    child: Placeholder(),
-                  ),
-                  Expanded(
-                    flex: 1,
-                    child: Placeholder(),
-                  ),
+                  Expanded(flex: 2, child: Placeholder()),
+                  Expanded(flex: 1, child: Placeholder()),
                 ],
               ),
             ),
@@ -121,7 +126,6 @@ class MeetTiga extends StatelessWidget {
                 'https://picsum.photos/400/200',
                 height: 150,
                 fit: BoxFit.cover,
-                
               ),
             ),
           ],
